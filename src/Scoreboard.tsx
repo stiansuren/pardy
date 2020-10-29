@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import usePersistedScore from "./usePersistedScore";
+import usePersistedState from "./usePersistedState";
 import styled from "styled-components";
 import { colors } from "./variables";
 
@@ -103,8 +103,8 @@ const Minus = () => {
 };
 
 export const Scoreboard = () => {
-  const [teamOne, setTeamOne] = usePersistedScore("TeamOne", 0);
-  const [teamTwo, setTeamTwo] = usePersistedScore("TeamTwo", 0);
+  const [teamOne, setTeamOne] = usePersistedState("TeamOne", 0);
+  const [teamTwo, setTeamTwo] = usePersistedState("TeamTwo", 0);
 
   useEffect(() => {}, [teamOne, teamTwo]);
 

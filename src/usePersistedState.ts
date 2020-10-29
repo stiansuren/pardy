@@ -1,12 +1,11 @@
 import React from "react";
 
-export default function usePersistedState(key: string, defaultValue: boolean) {
+export default function usePersistedState<StateType>(key: string, defaultValue: StateType) {
   const [state, setState] = React.useState(() => {
-    const persistedState = localStorage.getItem(key) === "true";
-    return persistedState ? persistedState : defaultValue;
+    return (JSON.parse(localStorage.getItem(key) as string) as StateType) || defaultValue ;
   });
   React.useEffect(() => {
-    window.localStorage.setItem(key, state.toString());
+    window.localStorage.setItem(key, JSON.stringify(state));
   }, [state, key]);
-  return [state, setState];
+  return [state, setState] as [StateType, React.Dispatch<React.SetStateAction<StateType>>];
 }
