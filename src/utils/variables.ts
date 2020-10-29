@@ -3,7 +3,7 @@ export const colors = {
   pink: "#FF37BB",
   lightpink: "#FFA7E1",
   yellow: "#FFC163",
-  magenta: "#B00495"
+  magenta: "#B00495",
 };
 
 export function getGradientColors(index: number) {

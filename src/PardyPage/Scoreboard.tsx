@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import usePersistedState from "./usePersistedState";
+import usePersistedState from "../utils/usePersistedState";
 import styled from "styled-components";
-import { colors } from "./variables";
+import { colors } from "../utils/variables";
 
 const Board = styled.div`
   justify-self: center;

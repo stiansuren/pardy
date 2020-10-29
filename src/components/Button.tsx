@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { colors } from "./variables";
+import { colors } from "../utils/variables";
 
 const StyledButton = styled.button`
   padding: 8px 16px;

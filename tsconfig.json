@@ -1,6 +1,6 @@
 {
   "include": [
-    "./src/*"
+    "./src/*", "src/PardyPage.tsx", "src/components/Question.tsx", "src/components/Scoreboard.tsx", "src/components/Button.tsx", "src/utils/variables.ts", "src/utils/usePersistedState.ts"
   ],
   "compilerOptions": {
     "strict": true,

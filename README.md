@@ -1,2 +1,3 @@
 # pardy
-Created with CodeSandbox
+
+A great quiz app.

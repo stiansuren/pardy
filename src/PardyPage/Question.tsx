@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import usePersistedState from "./usePersistedState";
-import { Button } from "./Button";
+import usePersistedState from "../utils/usePersistedState";
+import { Button } from "../components/Button";
 import styled from "styled-components";
-import { colors, getGradientColors } from "./variables";
+import { colors, getGradientColors } from "../utils/variables";
 
 type QuestionType = {
   index: number;
