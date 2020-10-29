@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Question } from "./PardyPage/Question";
-import { Scoreboard } from "./PardyPage/Scoreboard";
-import { questions } from "./questions/react_questions";
-import { Button } from "./components/Button";
-import "./styles.css";
+import { Question } from "./Question";
+import { Scoreboard } from "./Scoreboard";
+import { questions } from "../questions/react_questions";
+import { Button } from "../components/Button";
 import { v4 as uuidv4 } from "uuid";
-import { colors } from "./utils/variables";
+import { colors } from "../utils/variables";
 
 const Categories = styled.div`
   display: grid;
