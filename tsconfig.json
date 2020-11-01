@@ -1,14 +1,17 @@
 {
   "include": [
-    "./src/*", "src/PardyPage.tsx", "src/components/Question.tsx", "src/components/Scoreboard.tsx", "src/components/Button.tsx", "src/utils/variables.ts", "src/utils/usePersistedState.ts"
+    "./src/*",
+    "src/PardyPage.tsx",
+    "src/components/Question.tsx",
+    "src/components/Scoreboard.tsx",
+    "src/components/Button.tsx",
+    "src/utils/variables.ts",
+    "src/utils/usePersistedState.ts"
   ],
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
-    "lib": [
-      "dom",
-      "es2015"
-    ],
+    "lib": ["dom", "es2015"],
     "jsx": "preserve",
     "target": "es5",
     "allowJs": true,
@@ -20,5 +23,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true
-  }
+  },
+  "exclude": ["./functions/src/**/*"]
 }
